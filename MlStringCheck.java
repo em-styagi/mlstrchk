@@ -8,10 +8,28 @@ public class MlStringCheck {
         return test.matches("(^[A-Z].*)");
     }
 
-    public static void main (String[] args) {
-
-        //String has an even number of quotation marks
+    private static boolean endsWithPeriod(String test) {
         //String ends with a period character “."
+        return test.matches("(.*\\.$)");
+    }
+
+    private static boolean containsEvenCountOfQuotes(String test) {
+        //String has an even number of quotation marks
+        int count = 0;
+
+        for (int i=0; i<test.length(); i++) {
+            if (test.charAt(i) == '"')
+                count+=1;
+        }
+
+        if ( (count % 2) == 0 ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static void main (String[] args) {
         //String has no period characters other than the last character
         //Numbers below 13 are spelled out (”one”, “two”, "three”, etc…)
 
@@ -39,6 +57,14 @@ public class MlStringCheck {
         }
 
         if (startsWithCapital(aValidStr[0])) {
+            System.out.println("passed");
+        }
+
+        if (endsWithPeriod(aValidStr[0])) {
+            System.out.println("passed");
+        }
+
+        if (containsEvenCountOfQuotes(aValidStr[0])) {
             System.out.println("passed");
         }
     }
