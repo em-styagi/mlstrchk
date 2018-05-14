@@ -11,5 +11,8 @@ default: classes
 
 classes: $(CLASSES:.java=.class)
 
+test: MlStringCheck.class
+	java MlStringCheck
+
 clean:
 	$(RM) *.class
