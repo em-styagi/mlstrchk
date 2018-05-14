@@ -14,19 +14,13 @@ Here are some examples:
 
 Valid sentences:
 The quick brown fox said “hello Mr lazy dog”.
-
 The quick brown fox said hello Mr lazy dog.
-
 One lazy dog is too few, 13 is too many.
-
 One lazy dog is too few, thirteen is too many.
 
 Invalid sentences
-
 The quick brown fox said "hello Mr. lazy dog".
-
 the quick brown fox said “hello Mr lazy dog".
-
 "The quick brown fox said “hello Mr lazy dog."
-
 One lazy dog is too few, 12 is too many.
+
