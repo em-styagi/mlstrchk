@@ -58,7 +58,7 @@ public class MlStringCheck {
             System.out.println("passed");
         }
 
-        if (mysc.containsEvenCountOfChar('"')) {
+        if (mysc.containsEvenCountOfQuotes()) {
             passCount++;
             System.out.println("passed");
         }
