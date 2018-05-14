@@ -16,12 +16,12 @@ public class MlStringCheck {
         return testString.matches("(.*\\.$)");
     }
 
-    private static boolean containsEvenCountOfQuotes(String test) {
-        //String has an even number of quotation marks
+    public boolean containsEvenCountOfQuotes() {
+        //String has an even number of quotes appearing
         int count = 0;
 
-        for (int i=0; i<test.length(); i++) {
-            if (test.charAt(i) == '"')
+        for (int i=0; i<testString.length(); i++) {
+            if (testString.charAt(i) == '"')
                 count+=1;
         }
 
