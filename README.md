@@ -25,8 +25,8 @@ the quick brown fox said “hello Mr lazy dog".
 One lazy dog is too few, 12 is too many.
 
 #DEPENDENCIES:
-# while the tools listed below were used to develop the following tool
-# the latest versions are not necessary in order to build and run
+while the tools listed below were used to develop the following tool
+the latest versions are not necessary in order to build and run
 open-jdk-7
 GNU Make 4.0
 GNU bash 4.3.30
